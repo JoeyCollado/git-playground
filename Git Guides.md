@@ -21,6 +21,14 @@ git config user.name                       # Check specific setting
 
 git branch --set-upstream-to=origin/branchName    # allow our local branch to automatically attract a specific remote   branch, for example if we set the upstream to only frontend branch git pull and git push only works there and not other branches and github will know of that fact
 
+# How to fix specific commit branch behind x number of commits from main
+
+git checkout backend
+git fetch origin
+git merge origin/main
+git push
+
+
 # Basic Local Commands
 
 git status                            # Show working tree status
